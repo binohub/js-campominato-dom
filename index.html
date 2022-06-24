@@ -14,17 +14,24 @@
             <div class="col-6">
                 <h1 class="text-center">campo minato</h1>
             </div>
-            <div class="col-3">
-                <button id="btn-play" type="button" class="btn btn-success btn badge-pill px-3">play</button>
-            </div>
-            <div class="col-3">
+            <div id="btn-difficulty" class="dropdown col-3 d-flex justify-content-end">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  difficulty
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a id="difficulty-hard" class="dropdown-item" href="#">hard</a>
+                  <a id="difficulty-medium" class="dropdown-item" href="#">medium</a>
+                  <a class="dropdown-item" href="#">easy</a>
+                </div>
+              </div>
+            <div class="col-3 d-flex justify-content-start">
                 <button id="btn-reset" type="button" class="btn btn-danger btn badge-pill px-3">reset</button>
             </div>
         </div>
     </div>
     <hr class="my-4">
     <div id="main-container" class="container d-flex justify-content-center">
-        <div id="square-container" class="row block align-content-start">
+        <div id="square-container" class="row d-none align-content-start">
             
         </div>
     </div>

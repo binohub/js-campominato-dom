@@ -7,16 +7,40 @@ body
 /* ! ### container mine ### */
 #main-container .row
 {
-    /* todo da rimuovere */
+    border: 5px solid black ;
+
     height: 600px;
     width: 600PX;
-    border: 5px solid black ;
 }
 
-.square
+.square-hard
 {
     height: calc(100% / 10);
     width: calc(100% / 10);
+    border: 5px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.square-medium
+{
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+    border: 5px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.square-easy
+{
+    height: calc(100% / 7);
+    width: calc(100% / 7);
     border: 5px solid black;
 
     display: flex;
