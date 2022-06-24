@@ -21,6 +21,16 @@ for (let i = 1; i <= 100; i++){
     newDiv.classList.add('square');
     newDiv.innerHTML = i;
 
+    // ! al click fai pari o dispari? a seconda del risultato aggiungi una classe
+    newDiv.addEventListener('click', function(){
+    if (i % 2 === 0){
+        newDiv.classList.toggle("bg-success");
+    }else{
+        newDiv.classList.toggle("bg-danger");
+    }
+})
+
     // ! conneecting
     squareContainer.append(newDiv)
 } 
+
