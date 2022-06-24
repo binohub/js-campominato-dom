@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+body
+{
+    font-family: 'League Gothic', sans-serif;
+}
+
+/* ! ### container mine ### */
+#mine-container .row
+{
+    /* todo da rimuovere */
+    height: 600px;
+    width: 600PX;
+    border: 5px solid black ;
+}
+
+.square
+{
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: 5px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
