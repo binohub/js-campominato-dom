@@ -10,3 +10,17 @@ btnReset.addEventListener("click", function(){
     const squareContainer = document.querySelector("#square-container");    
     squareContainer.classList.add("d-none");
 })
+
+
+
+const squareContainer = document.getElementById("square-container")
+// ! crea un quadrato * 100 e assegna al quadrato il suo numero
+for (let i = 1; i <= 100; i++){
+    // ! crea un div con classe square da aggiungere
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('square');
+    newDiv.innerHTML = i;
+
+    // ! conneecting
+    squareContainer.append(newDiv)
+} 
